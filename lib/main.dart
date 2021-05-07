@@ -2,7 +2,10 @@ import 'package:contact_honeybee/Database/moor_database.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+import 'Database/service_locator.dart';
+
+Future<void> main() async {
+  await setupLocator();
   runApp(Orders());
 }
 
